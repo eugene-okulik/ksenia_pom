@@ -1,6 +1,8 @@
 import pytest
+import allure
 
 
+@allure.story('Input')
 @pytest.mark.parametrize('text', ['sdfsdfsdf', 'fghfghfghfgh', 'erertert'])
 def test_enter_text(input_page, text):
     input_page.open_page()
